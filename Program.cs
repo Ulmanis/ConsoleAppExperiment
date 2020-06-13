@@ -6,7 +6,13 @@ namespace ConsoleAppExperiment
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bruh moment");
+            Human person;
+            person = new Human("Geralt ", "Of Rivia", 225, "Brown");
+            person.Introduce();
+
+            person.AddNumbers(person.Age, 100); 
         }
     }
+
+
 }
