@@ -21,7 +21,7 @@ namespace ConsoleAppExperiment
 
         public void Introduce()
         {
-            Console.WriteLine("Hi, my full name is " + this.Name + " " + this.Surname + ". " + "I am " + this.Age + " years old.");
+            Console.WriteLine($"Hi, my full name is {this.Name} {this.Surname}. I am {this.Age} years old.");
         }
 
         public void AddNumbers(int a, int b)
@@ -39,6 +39,19 @@ namespace ConsoleAppExperiment
             if(age < 0)
             {
                 return;
+            }
+            else if(age < this.Age)
+            {
+                Console.WriteLine("The new age for " + this.Name + "is younger, are you sure You want to change it? y/n?");
+                string answer = Console.ReadLine();
+                if(answer == "y")
+                {
+                    this.Age = age;
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {

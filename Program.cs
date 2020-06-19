@@ -14,7 +14,7 @@ namespace ConsoleAppExperiment
             persons.Add(new Human("Erwin ", "Rommel", 35, "Gray"));
             persons.Add(new Human("Wilhelm ", "Fon Strutzk", 55, "Brown"));
 
-
+            persons[1].SetAge(65);
 
             //persons[0].SayName();
             //persons[1].SayName();
